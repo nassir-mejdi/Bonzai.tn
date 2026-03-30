@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonzai Coffee Lounge | Menu Digital</title>
+    <meta name="description" content="Découvrez le menu raffiné du Bonzai Coffee Lounge. Cafés classiques, Lavazza, Nespresso, et délices gourmands au Bardo.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" style="text-decoration: none;">
+                <div style="display: flex; flex-direction: column;">
+                    <span class="logo-text">BONZAI</span>
+                    <span class="logo-sub">Coffee Lounge</span>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <a href="#sets">Petit Déjeuner</a>
+                <a href="#cafes">Cafés</a>
+                <a href="#savoureux">Savoureux</a>
+                <a href="#boissons">Boissons</a>
+                <a href="#chicha">Chicha</a>
+            </nav>
+            <div class="nav-contact">
+                <a href="tel:+21620234039" class="btn-contact"><i class="fas fa-phone"></i><span>+216 20 23 40 39</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h2 class="hero-subtitle">Bienvenue chez</h2>
+                <h1 class="hero-title">Bonzai Lounge</h1>
+                <p class="hero-tagline">Un cadre chaleureux et raffiné pour vos moments d'exception.</p>
+            <div class="hero-btns">
+                <a href="#menu-container" class="btn btn-primary">Explorer le Menu</a>
+                <a href="https://www.facebook.com/lounge.coffee.Bardo/" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fab fa-facebook"></i> Suivez-nous</a>
+            </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Découvrir</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section class="menu-nav-sticky">
+            <div class="container sticky-container">
+                <div class="category-scroll">
+                    <button class="cat-btn active" data-target="sets">Petit Déjeuner</button>
+                    <button class="cat-btn" data-target="cafes">Cafés Classiques</button>
+                    <button class="cat-btn" data-target="lavazza">Lavazza</button>
+                    <button class="cat-btn" data-target="nespresso">Nespresso</button>
+                    <button class="cat-btn" data-target="frappuchinos">Frappuccinos</button>
+                    <button class="cat-btn" data-target="chocolats">Chocolats Chauds</button>
+                    <button class="cat-btn" data-target="savoureux">Savoureux</button>
+                    <button class="cat-btn" data-target="boissons">Boissons & Jus</button>
+                    <button class="cat-btn" data-target="desserts">Desserts</button>
+                    <button class="cat-btn" data-target="chicha">Chicha</button>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="menu-search" placeholder="Rechercher un plat, boisson..." autocomplete="off">
+                </div>
+            </div>
+        </section>
+
+        <div id="menu-container" class="container">
+            <!-- Menu Sections will be dynamic -->
+        </div>
+
+        <section class="events-cta container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Fêtez votre anniversaire chez nous</h2>
+                    <p>Envie de réunir vos amis ou de faire une surprise à un proche ? Bonzai Lounge vous accueille pour rendre votre événement inoubliable.</p>
+                    <div class="cta-contact">
+                        <span><i class="fas fa-phone-alt"></i> (+216) 22 300 217</span>
+                        <span><i class="fas fa-phone-alt"></i> (+216) 25 146 501</span>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <img src="event-cupcake.png" alt="Célébrations au Bonzai Lounge">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>BONZAI <span>Coffee Lounge</span></h3>
+                <p>Avenue Habib Bourguiba, Le Bardo</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/lounge.coffee.Bardo/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-hours">
+                <h4>Horaires</h4>
+                <p>7j/7 : 07:00 - 00:00</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bonzai Coffee Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
